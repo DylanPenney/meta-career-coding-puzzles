@@ -30,7 +30,7 @@ class getMaxAdditionalDinersCount_test(unittest.TestCase):
     inputs = [[10, 1, 2, [2, 6]], [15, 2, 3, [11, 6, 14]]]
     expected = [3, 1]
 
-    def test(self):
+    def test(self) -> None:
         for i, input in enumerate(self.inputs):
             self.assertEqual(getMaxAdditionalDinersCount(*input), self.expected[i])
 
